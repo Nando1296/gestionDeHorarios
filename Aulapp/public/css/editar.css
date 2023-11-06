@@ -1,0 +1,117 @@
+
+.nav-link{
+    font-family: 'Gruppo', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+#Titulo{
+    margin-left: 250px;
+}
+#menu{
+    text-decoration: none;
+    color: black;
+    display: none;
+}
+.ed{
+    display: none;
+}
+@media (max-width: 1300px){
+    #Titulo{
+        margin-right: 15px;
+    }
+    .nav-link{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    
+}
+@media (max-width: 830px){
+#Titulo{
+    margin-left: 0;
+    font-size: 15px;
+    display: block;
+    padding-top: 7px;
+}
+.nav-link{
+    
+    font-size: 10px;
+}
+#Nlogo{
+    font-size: 15px;
+}
+#logo{
+    width: 15px;
+}
+#menu{
+    display: block;
+}
+.nav-link{
+    display: none;
+}
+}
+.A_icon{
+    display: block;
+    float: left;
+}
+.A_let{
+    display: block;
+    
+}
+.A_cont{
+    margin-top: 10px;
+    background: white;
+    border: solid black 1px;
+    width: 200px;
+    border-radius: 20px;
+}
+.A_cont:hover{
+    color: red;
+    cursor: pointer;
+}
+#agregar{
+    color: white;
+    background-color: black;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+}
+.oculto{
+    display: none;
+}
+#error_asignacion{
+    color: red;
+}
+.error{
+    color: red;
+}
+@media (max-width: 500px) {
+   #cambiar, #nuevo, #btn_cancelar{
+       display: block;
+       margin-bottom: 10px;
+       width: 150px;
+   }
+    
+}
+@media (max-width: 300px) {
+   
+    #inicio,#registrar,#editar,#eliminar,#reporte{
+        font-size: 6px;
+    }
+    #campana{width: 20px;}
+    #formulario{
+        width: 100%;
+    }
+    #fecha{
+        font-size: 12px;
+    }
+    label{
+        font-size: 13px;
+    }
+    option, .form-select, .btn,#añadirD,#añadirG{
+        font-size: 10px;
+    }
+
+}

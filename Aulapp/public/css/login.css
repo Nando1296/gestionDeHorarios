@@ -1,0 +1,16 @@
+#formularioEditar{
+    margin-top: 5%;
+   
+}
+#campana{
+    display: block;
+    color: black;
+    padding-top: 8px;
+}
+a{
+    text-decoration: none;
+}
+#doc{
+    width: 300px;
+    padding-left: 20px;
+}

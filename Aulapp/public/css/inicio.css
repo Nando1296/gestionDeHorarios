@@ -1,0 +1,18 @@
+#inicio{
+    width: 40%;
+    margin-top: 5%;
+    margin-left: 30%;
+    text-align: center;
+}
+#btn_init{
+    width: 20%;
+    border-radius: 20px;
+}
+body{
+    background-image:url('../Imagenes/1.png');
+  
+    
+}
+#sesion{
+    font-size: 15px;
+}

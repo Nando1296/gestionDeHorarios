@@ -1,0 +1,161 @@
+.nav-link {
+    color: black;
+    border: 0px black solid;
+    background-color: #F8F9FA;
+}
+#campana{
+    display: block;
+    color: black;
+    padding-top: 8px;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav {
+    border-bottom: #c7c6c8 solid;
+}
+#formulario {
+    margin: auto;
+    width: 90%;
+    border: 1px solid black;
+    padding: 10%;
+    background-color: #e8edea;
+    border: white solid 1px;
+    margin-bottom: 30px;
+}
+#listaSecciones {
+    background-color: #c6c6c6;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+#Container {
+    margin-top: 3%;
+    max-width: 1800px;
+}
+h3 {
+    text-align: center;
+}
+
+input {
+    box-shadow: 6px 6px 1px #cac8ca;
+}
+#botonRegistrar {
+    margin-top: 7%;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: 6px 6px 1px #e8edea;
+}
+label {
+    margin-top: 3%;
+}
+svg {
+    font-size: 25px;
+}
+#botonEliminar {
+    margin: 0;
+    color: black;
+    border: none;
+    display: block;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background-color: #c6c6c6;
+    width: 35px;
+    height: 35px;
+    border-radius: 60%;
+}
+#botonEditar {
+    cursor: pointer;
+    margin: 0;
+    color: black;
+    border: none;
+    display: block;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background-color: #c6c6c6;
+    width: 35px;
+    height: 35px;
+    border-radius: 60%;
+}
+
+#formularioEditar {
+    max-width: 500px;
+    margin: auto;
+}
+.modal {
+    top: 25%;
+}
+#columnaEliminar {
+    width: 75px;
+}
+#columnaEditar {
+    width: 75px;
+}
+
+
+#logo {
+    margin-left: 10px;
+    margin-top: 0;
+    display: block;
+    float: right;
+}
+#datosEliminar {
+    background-color: rgba(146, 143, 143, 0.466);
+}
+body{
+ 
+        font-family: 'Poppins', sans-serif;
+    
+}
+#añadirD ,#añadirG{
+    background-color: black;
+    margin-top: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+}
+.form-check-input{
+    box-shadow: 6px 6px 1px #E8EDEA;
+   
+}
+#estadoE{
+    display: none;
+}
+#titulo_tabla{
+    border-bottom: black solid 2px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.mensaje{
+    
+    background-color: aqua;
+}
+.mensaje:hover{
+color: black;
+}
+#cant_not{
+    display: none;
+}
+@media (max-width: 500px) {
+    
+   
+    h3{
+        font-size: 15px;
+    }
+
+    }
+ @media (max-width: 300px) {
+   
+    h3{
+       font-size: 15px;
+    }
+    #tablaDocente, #tablaMateria,#tablaGrupo, #tablaCarrera,#tablaAula,#tablaSeccion,#tablita,#primero,#tercero{
+        font-size: 10px;
+    }
+}

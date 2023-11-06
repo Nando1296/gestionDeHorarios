@@ -1,0 +1,142 @@
+.tipo_m{
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#tipos{
+    width: 20%;
+    margin-left: 5%;
+    float: left;
+}
+#tabla,#aceptado,#rechazado{
+float: right;
+width: 70%;
+padding-right: 5%;
+}
+#campana{
+    display: block;
+    color: black;
+    padding-top: 8px;
+}
+a{
+    text-decoration: none;
+}
+input {
+    box-shadow: 6px 6px 1px white;
+}
+.check{
+    display: block;
+}
+.enviar{
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    margin-left: 80%;
+}
+#tabla_a{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+textarea,#error_mr{
+    margin-left: 25%;
+}
+
+.efecto {
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #dbdbdb;
+    transition: all 0.2s ease;
+    
+    font-size: 14px;
+    font-weight: 600;
+    color: #3f3f3f;
+    
+  }
+  
+  .efecto2 {
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #dbdbdb;
+    transition: all 0.2s ease;
+    
+    font-size: 14px;
+    font-weight: 600;
+    color: #3f3f3f;
+    
+  }
+
+  .efecto:hover {
+   
+    box-shadow: 9px 9px 22px #616161, -1px -1px 5px #cfcfcf;
+    transform: translateY(-2px);
+}
+
+.efecto2:hover {
+   
+    box-shadow: 9px 9px 22px #cfcfcf, -1px -1px 5px #cfcfcf;
+    transform: translateY(-2px);
+}
+  
+  .efecto:active {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+  }
+  
+  .efecto.check {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+  }
+  
+.aceptado{
+background-color:#EBEBEB;
+}
+.rechazado{
+   background-color: #908E8F;
+}
+.reasignado{
+background-color:#BABABA;
+}
+@media (max-width: 600px) {
+    #tabla,#aceptado,#rechazado{
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+        }
+    #tabla, td{
+        font-size: 10px;
+    }
+        #tipos{
+            width: 50%;
+            margin-left: 5%;
+            float: none;
+        }
+}
+@media (max-width: 400px) {
+
+    span, h5{
+        font-size: 10px;
+    }
+    #btn_aceptar,#btn_rechazar{
+        margin-bottom: 5px;
+    }
+    .accordion-button{
+        font-size: 12px;
+    }
+  }
+@media (max-width: 300px) {
+  header{
+      width: 307px;
+  }
+  span, h5{
+      font-size: 10px;
+  }
+  #btn_aceptar,#btn_rechazar{
+      margin-bottom: 5px;
+  }
+  .accordion-button{
+      font-size: 12px;
+  }
+}

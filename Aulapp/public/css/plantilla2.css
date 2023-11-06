@@ -1,0 +1,105 @@
+.nav-link {
+    color: black;
+}
+nav {
+    border-bottom: #c7c6c8 solid;
+}
+#formulario {
+    margin: auto;
+    max-width: 450px;
+
+    padding: 15px;
+    background-color: #e8edea;
+    margin-bottom: 30px;
+}
+#listaSecciones {
+    background-color: #c6c6c6;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+#Container {
+    margin-top: 5%;
+    max-width: 1800px;
+}
+h3 {
+    text-align: center;
+}
+
+input {
+    box-shadow: 6px 6px 1px #cac8ca;
+}
+#botonRegistrar {
+    margin-top: 7%;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: 6px 6px 1px #e8edea;
+}
+label {
+    margin-top: 3%;
+}
+svg {
+    font-size: 25px;
+}
+#botonEliminar {
+    margin: 0;
+    color: black;
+    border: none;
+    display: block;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background-color: #c6c6c6;
+    width: 35px;
+    height: 35px;
+    border-radius: 60%;
+}
+#botonEditar {
+    cursor: pointer;
+    margin: 0;
+    color: black;
+    border: none;
+    display: block;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background-color: #c6c6c6;
+    width: 35px;
+    height: 35px;
+    border-radius: 60%;
+}
+
+#formularioEditar {
+    max-width: 500px;
+    margin: auto;
+}
+.modal {
+    top: 25%;
+}
+#columnaEliminar {
+    width: 75px;
+}
+#columnaEditar {
+    width: 75px;
+}
+#datosEliminar {
+    background-color: rgba(146, 143, 143, 0.466);
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+#Nlogo {
+    font-family: "Gruppo", cursive;
+    font-family: "Poppins", sans-serif;
+    margin-left: 10px;
+    font-size: 30px;
+    display: block;
+    float: left;
+}
+#logo {
+    margin-left: 10px;
+    margin-top: 0;
+    display: block;
+    float: right;
+}
