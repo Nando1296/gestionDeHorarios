@@ -85,7 +85,7 @@ class UsuarioController extends Controller
   $usuario->contrasenia = $Usercontrasenia;
   $usuario->save();
   //Enviamos un email al docente
-  Notification::route('mail', $request->email)->notify(new NotificationsUsuario($usuario));
+  //Notification::route('mail', $request->email)->notify(new NotificationsUsuario($usuario));
   //Asignamos en user rol el rol de docente
   $userRol             = new UserRol();
   $id_usuario          = Usuario::firstWhere('CI', $request->ci);
