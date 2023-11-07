@@ -26,7 +26,8 @@
   <header>
     <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><span id="Nlogo">Aulapp</span><img src="{{asset('Imagenes/logo.jpeg')}}" width="50" id="logo"></a>
+        <img src="{{asset('imagenes/INF-SIS.png')}}" alt="" >
+        <div class="titulo">Departamento de Informática y Sistemas </div>
         @yield('Titulo')
         <a href="#" class="material-symbols-outlined" id="menu">menu</a>
         <form class="d-flex">
