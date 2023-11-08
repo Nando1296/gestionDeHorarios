@@ -8,13 +8,7 @@
 </a>
 
 @endsection
-@section("notificacion")
-  @if($rol->id == 1)
-      respuestaAdmin
-  @else
-      bandeja_docente
-  @endif
-@endsection
+
 @section('Titulo')
     <h3>Menú de {{ $rol->nombre }}</h3>
 @endsection
@@ -28,6 +22,11 @@
                 :ruta="$privilegio->funcionalidad->ruta"
             />
         @endforeach
+        <x-menu.funcionalidad
+                :nombre="Cambio de Horarios"
+                :icono="menu_book"
+                :ruta="/cambioHorario"
+            />
     </div>
     @if ($rol->id == 1)
     <div class="card mb-3" style="max-width: 540px;" id="presentacion">

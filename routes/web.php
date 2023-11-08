@@ -13,6 +13,7 @@ use App\Http\Controllers\reservaController;
 use App\Http\Controllers\respuestasController;
 use App\Http\Controllers\SeccionController;
 use App\Http\Controllers\UsuarioController;
+use App\Http\Controllers\cambioController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -146,4 +147,7 @@ Route::get('/menu', [MenuController::class, 'loadMenu']);
 
 Route::post('logout', [AuthController::class, 'logout']);
 });
+
+Route::get('/cambioHorario', [cambioController::class,'formulario'] );
+
 
