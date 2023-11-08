@@ -17,17 +17,12 @@ class gestionController extends Controller
     {
 
         //Recuperamos el usuario autentificado para las notificaciones nuevas que tiene
-        $usuario = Auth::user();
-        $ur = UserRol::where("usuario_id",$usuario->id)->get();
-        $not= nuevasnotificacion::where("user_rol_id",$ur[0]->id)->get();
-        $cantidad=0;
-             if($not!="[]"){
-                  $cantidad=$not[0]->cantidad_not;
-              }
+       
         $gestiones=gestion::all();
+        
 
 //Acceder a la vista de estado de gestion 
-        return view('Gestion.estado_gestion', ['gestiones' => $gestiones, 'not'=>$cantidad]);
+        return view('Gestion.estado_gestion', ['gestiones' => $gestiones]);
 
     }
 

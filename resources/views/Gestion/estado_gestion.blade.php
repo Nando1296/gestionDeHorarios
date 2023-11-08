@@ -30,13 +30,7 @@
         <h3>Estado de gestion</h3>
         
         <form class="d-flex">
-          <a href="/respuestaAdmin"><img src="{{asset('Imagenes/campana.png')}}" id="campana" width="30" alt="notificaciones">
-          </a>
-          <a  class=" position-relative" id="cant_not">
-           <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
-         {{$not}}
-          </span>
-          </a>
+      
           <a class="nav-link active" aria-current="page" href="/menu" id="inicio">Inicio</a>
         </form>
       </div>
@@ -82,8 +76,10 @@
    var encontrado=""
    var id2=0;
     @foreach ($gestiones as $gestion )
+    
       @if ($gestion->estado == 1)
       @php
+
         $id=$gestion->id;
         $año=intval(explode("/",$gestion->nombreG)[1])+1;
       @endphp
@@ -132,12 +128,7 @@
   </script>
   <script>
     //-Se necesita un temporizador para recuperar la cantidad de notinicaciones para la bandeja
-    setTimeout(() => {
-    if("{{$not}}"!=0){
-      var not= document.getElementById("cant_not")
-      not.style.display="block";
-    }
-  },100);
+
   var inicio = document.getElementById("inicio")
   inicio.style.display="block"
   </script>

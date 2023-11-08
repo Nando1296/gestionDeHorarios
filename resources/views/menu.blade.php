@@ -27,6 +27,12 @@
                 :icono="'menu_book'"
                 :ruta="'/cambioHorario'"
             />
+
+            <x-menu.funcionalidad
+                :nombre="'Gestiones'"
+                :icono="'menu_book'"
+                :ruta="'/gestion'"
+            />
     </div>
     @if ($rol->id == 1)
     <div class="card mb-3" style="max-width: 540px;" id="presentacion">
