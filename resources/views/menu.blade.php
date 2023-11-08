@@ -23,9 +23,9 @@
             />
         @endforeach
         <x-menu.funcionalidad
-                :nombre="Cambio de Horarios"
-                :icono="menu_book"
-                :ruta="/cambioHorario"
+                :nombre="'Cambio de Horario'"
+                :icono="'menu_book'"
+                :ruta="'/cambioHorario'"
             />
     </div>
     @if ($rol->id == 1)
