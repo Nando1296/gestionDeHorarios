@@ -5,7 +5,7 @@
 @section("reporte","reporte_materia")
 @section("eliminar","eliminar-materia")
 @section('Titulo')
-<h3 text-center id="Titulo">Administración de materias</h3>
+<h3 text-center >Administración de materias</h3>
 @endsection
 @section('Contenido formulario')
 
@@ -16,7 +16,7 @@
     <form method="GET" action="" id="formulario">
       
       @csrf
-      <h3 text-center>Editar materia</h3>
+      <h3 text-center class="titulo-form">Editar materia</h3>
 
       <label for="inputtexto" class="form-label ">Coloque el código de la materia que quiere editar y presione buscar</label>
       <input type="text" id="inputtexto" class="form-control" name="nombre" value="{{old('nombre')}}" autofocus>
