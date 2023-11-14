@@ -12,7 +12,7 @@
 action={{route('materia_docente')}}
 @endsection
 @section('Titulo form')
-<h3>Registro de asignación de docente a grupo</h3>
+<h3 class="titulo-form">Registro de asignación de docente a grupo</h3>
 @endsection
 @section('Contenido formulario')
 <label class="form-label">Materia</label>

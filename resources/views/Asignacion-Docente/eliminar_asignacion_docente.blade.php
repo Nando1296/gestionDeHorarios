@@ -1,15 +1,17 @@
 @extends('plantilla2')
 @section('title', 'Asignacion docente')
 
-
 <header>
-  <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><span id="Nlogo">Aulapp</span><img id="logo"
-          src="{{asset('Imagenes/logo.jpeg')}}" width="50" id="logo"></a>
-      <h3 text-center>Administración de docente-grupo </h3>
-      <a href="#" class="material-symbols-outlined" id="menu">menu</a>
-      <form class="d-flex m-0">
+  <nav class="navbar navbar-light ">
+     <div class="nav">
+      
+        <img src="{{asset('imagenes/INF-SIS.png')}}" alt="" >
+        <div class="titulo">Departamento de Informática y Sistemas </div>
+      
+        <h3 text-center id="Titulo">Administración de docente-grupo</h3>
+       
+       <a href="#" class="material-symbols-outlined" id="menu">menu</a>
+       <form class="d-flex m-0">
         <a class="nav-link active" aria-current="page" href="{{url('menu')}}">Inicio</a>
         <a class="nav-link active" aria-current="page" href="{{url('materia_docente')}}">Registrar</a>
         {{-- <a class="nav-link active" aria-current="page" href="#">Editar</a> --}}
@@ -17,16 +19,18 @@
         <a class="nav-link active" aria-current="page" href="{{url('/reporte_asignacion_docente')}}">Ver reporte</a>
 
       </form>
-    </div>
-  </nav>
-</header>
+     </div>
+   </nav>
+ </header> 
+
+
 @section('Contenido formulario')
 
 <div class="d-flex align-items-center justify-content-center row p-2" id="formulario">
   <div class="col-12">
 
     <form id="formulario" method="GET" action="{{route('eliminar-asignacion-docente')}}">
-      <h3 text-center>Eliminar docente-grupo</h3>
+      <h3 text-center class="titulo-form">Eliminar docente-grupo</h3>
       @csrf
 
       <label for="inputNombre" class="form-label">Introduzca el ID</label>
