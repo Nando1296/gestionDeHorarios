@@ -5,7 +5,7 @@
 @section("reporte","reporte_carrera")
 @section("eliminar","eliminar-carrera")
 @section('Titulo')
-<h3 text-center  id="Titulo"> Administración de carreras</h3>
+<h3 text-center > Administración de carreras</h3>
 @endsection
 @section('action')
 action="{{route('carreras')}}"

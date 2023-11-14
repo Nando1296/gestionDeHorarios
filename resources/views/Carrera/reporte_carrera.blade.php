@@ -16,7 +16,7 @@
 
 
 
-<h3 class="row justify-content-center justify-content-md-start">&nbsp;&nbsp;Lista de carreras</h3>
+<h3 class="row justify-content-center justify-content-md-start titulo-form">&nbsp;&nbsp;Lista de carreras</h3>
 @if(count($carreras) == 0)
       <br>
       <br>

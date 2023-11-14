@@ -6,7 +6,7 @@
 @section("registrar","carreras")
 @section("reporte","reporte_carrera")
 @section("eliminar","eliminar-carrera")
-<h3 text-center id="Titulo">Administración de carreras</h3>
+<h3 text-center >Administración de carreras</h3>
 @endsection
 {{-- Contenido del formula de editar carrera--}}
 @section('Contenido formulario')
@@ -17,7 +17,7 @@
     <form method="GET" action="" id="formulario">
       
       @csrf
-      <h3 text-center>Editar carrera</h3>
+      <h3 text-center class="titulo-form">Editar carrera</h3>
 
       <label for="inputtexto" class="form-label ">Coloque el codigo de la carrera que quiere editar y presione buscar</label>
       <input type="text" id="inputtexto" class="form-control" name="nombre" value="{{old('nombre')}}" autofocus>

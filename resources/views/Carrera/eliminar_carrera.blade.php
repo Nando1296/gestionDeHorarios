@@ -1,18 +1,17 @@
 @extends('plantilla2')
 @section('title', 'Carrera')
 
-
-
-
 <header>
-  <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><span id="Nlogo">Aulapp</span><img id="logo"
-          src="{{asset('Imagenes/logo.jpeg')}}" width="50" id="logo"></a>
-      <h3 text-center id="Titulo">Administración de carreras</h3>
-      <a href="#" class="material-symbols-outlined" id="menu">menu</a>
-
-      <form class="d-flex m-0">
+  <nav class="navbar navbar-light ">
+     <div class="nav">
+      
+        <img src="{{asset('imagenes/INF-SIS.png')}}" alt="" >
+        <div class="titulo">Departamento de Informática y Sistemas </div>
+      
+        <h3 text-center id="Titulo">Administración de carreras</h3>
+       
+       <a href="#" class="material-symbols-outlined" id="menu">menu</a>
+       <form class="d-flex m-0">
         <a class="nav-link active" aria-current="page" href="{{url('/menu')}}">Inicio</a>
         <a class="nav-link active" aria-current="page" href="{{url('carreras')}}">Registrar</a>
         <a class="nav-link active" aria-current="page" href="{{url('/carreraEdit')}}">Editar</a>
@@ -20,9 +19,12 @@
         <a class="nav-link active" aria-current="page" href="{{url('/reporte_carrera')}}">Ver reporte</a>
 
       </form>
-    </div>
-  </nav>
-</header>
+     </div>
+   </nav>
+ </header> 
+
+
+
 @section('Contenido formulario')
 
 <div class="d-flex align-items-center justify-content-center row p-2" id="formulario">
@@ -30,7 +32,7 @@
 
     <form id="formulario" method="GET" action="{{route('eliminar-carrera')}}">
 
-      <h3 text-center>Eliminar carrera</h3>
+      <h3 text-center class="titulo-form">Eliminar carrera</h3>
 
       @csrf
 
