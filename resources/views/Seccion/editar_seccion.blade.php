@@ -5,7 +5,7 @@
 @section("eliminar","eliminar-seccion")
 @section('title', 'Sección')
 @section('Titulo')
-<h3 text-center id="Titulo">Administracion de secciones</h3>
+<h3 text-center >Administracion de secciones</h3>
 @endsection
 @section('Contenido formulario')
 {{--Formulario de edicion de seccion--}}
@@ -15,7 +15,7 @@
     <form method="GET" action="" id="formulario">
       
       @csrf
-      <h3 text-center>Editar sección</h3>
+      <h3 text-center class="titulo-form">Editar sección</h3>
 
       <label for="inputtexto" class="form-label ">Coloque el nombre de la sección que quiere editar y presione buscar</label>
       <input type="text" id="inputtexto" class="form-control" name="entrada" value="{{old('entrada')}}" autofocus>

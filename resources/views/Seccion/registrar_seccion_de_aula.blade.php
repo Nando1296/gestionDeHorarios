@@ -5,7 +5,7 @@
 @section("eliminar","eliminar-seccion")
 @section('title', 'Seccion')
 @section('Titulo')
-<h3 text-center  id="Titulo"> Administración de secciones</h3>
+<h3 text-center  > Administración de secciones</h3>
 @endsection
 @section('action')
 action="{{route('secciones')}}"

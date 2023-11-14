@@ -14,7 +14,7 @@
 @endsection
 @section('Contenido formulario')
 
-<h3 class="row justify-content-center justify-content-md-start">&nbsp;&nbsp;Lista de secciones</h3>
+<h3 class="row justify-content-center justify-content-md-start titulo-form">&nbsp;&nbsp;Lista de secciones</h3>
      
       @if(count($sections) == 0)
       
