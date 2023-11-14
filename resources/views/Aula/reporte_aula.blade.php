@@ -15,7 +15,7 @@
 @section('Contenido formulario')
 
 
-  <h3 id="T_tabla" class="row justify-content-center justify-content-md-start">&nbsp;&nbsp;Lista de aulas</h3>
+  <h3 id="T_tabla" class="row justify-content-center justify-content-md-start titulo-form">&nbsp;&nbsp;Lista de aulas</h3>
      @if(count($aulas) == 0)
       <br>
       <br>

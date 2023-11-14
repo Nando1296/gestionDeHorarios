@@ -6,7 +6,7 @@
 @section("eliminar","eliminar-aula")
 
 @section('Titulo')
-<h3 text-center id="Titulo">Administración de aulas</h3>
+<h3 text-center >Administración de aulas</h3>
 @endsection
 @section('Contenido formulario')
 {{--Formulario de edicion de aula--}}
@@ -16,7 +16,7 @@
     <form method="GET" action="" id="formulario">
       
       @csrf
-      <h3 text-center>Editar aula</h3>
+      <h3 text-center class="titulo-form">Editar aula</h3>
 
       <label for="inputtexto" class="form-label ">Coloque el nombre del aula que quiere editar y presione buscar</label>
       <input type="text" id="inputtexto" class="form-control" name="nombre" value="{{old('nombre')}}" autofocus>
