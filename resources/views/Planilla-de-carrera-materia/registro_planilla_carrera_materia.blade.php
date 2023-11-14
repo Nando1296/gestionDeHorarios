@@ -1,6 +1,6 @@
 @extends('plantilla_planillas')
 @section('Titulo')
-<h3 text-center id="Titulo">Administración de materia-carrera</h3>
+<h3 text-center >Administración de materia-carrera</h3>
 @endsection
 @section("registrar","materia_carrera")
 @section("reporte","reporte_carrera_materia")
@@ -9,7 +9,7 @@
 action={{route('materia_carrera')}}
 @endsection
 @section('Titulo form')
-<h3>Registro de asignacion de materia a carrera</h3>
+<h3 class="titulo-form">Registro de asignacion de materia a carrera</h3>
 @endsection
 @section('Contenido formulario')
     

@@ -24,7 +24,7 @@
 
 
   <header>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light ">
       <div class="container-fluid">
         <img src="{{asset('imagenes/INF-SIS.png')}}" alt="" >
         <div class="titulo">Departamento de Informática y Sistemas </div>
