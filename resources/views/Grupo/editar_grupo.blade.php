@@ -5,7 +5,7 @@
 @section("eliminar","eliminar-grupo")
 @section('title', 'Grupo')
 @section('Titulo')
-<h3 text-center id="Titulo">Administración de grupos</h3>
+<h3 text-center >Administración de grupos</h3>
 @endsection
 @section('Contenido formulario')
 
@@ -15,7 +15,7 @@
     <form method="GET" action="" id="formulario">
       
       @csrf
-      <h3 text-center>Editar grupo</h3>
+      <h3 text-center class="titulo-form">Editar grupo</h3>
       <label  class="form-label " id="titulo">Ingrese el id del grupo que desea editar</label>
       <input type="text" id="buscador" class="form-control">
       <br>

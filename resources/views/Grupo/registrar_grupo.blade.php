@@ -14,7 +14,7 @@
   <div class="d-flex" id="formularioEditar">
     <form id="formulario" method="post" action='{{route('grupos')}}' class="Grupo">
       
-      <h3 text-center>Registrar grupos</h3>
+      <h3 text-center class="titulo-form">Registrar grupos</h3>
       @csrf
       <!-- Materia -->
       <label for="input2" class="form-label">Materia</label>
