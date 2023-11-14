@@ -24,11 +24,17 @@
 
 
   <header>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light "  text-center>
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><span id="Nlogo">Aulapp</span><img src="{{asset('Imagenes/logo.jpeg')}}" width="50" id="logo"></a>
+        <div class="gestion-nav">
+        <img src="{{asset('imagenes/INF-SIS.png')}}" alt="" >
+        <div class="titulo">Departamento de Informática y Sistemas </div>
+       
+        </div>
+     
         <h3>Estado de gestion</h3>
-        
+
+        <a href="#" class="material-symbols-outlined" id="menu">menu</a>
         <form class="d-flex">
       
           <a class="nav-link active" aria-current="page" href="/menu" id="inicio">Inicio</a>
@@ -36,6 +42,8 @@
       </div>
     </nav>
   </header>
+
+ 
   <div id="Container" class="container-fluid">
     <div class="row">
         <div >
@@ -45,7 +53,7 @@
             <form method="GET" action="" id="formulario">
               
               @csrf
-              <h3 text-center>Gestion actual</h3>
+              <h3 text-center  class="titulo-form">Gestion actual</h3>
               <div id="gestion">
 
               </div>

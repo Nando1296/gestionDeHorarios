@@ -161,6 +161,11 @@ img{
     color: black;
 }
 
+.gestion-nav{
+    display: flex;
+    align-items: center;
+}
+
 
 @media (max-width: 500px) {
     
