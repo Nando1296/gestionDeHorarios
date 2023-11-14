@@ -7,7 +7,7 @@
   <div class="d-flex" id="formularioEditar">
     <form id="formulario" method="post" @yield('action')>
 
-      <h3 text-center>@yield('TituloForm')</h3>
+      <h3 text-center class="titulo-form">@yield('TituloForm')</h3>
       @csrf
       <label for="input1" class="form-label">@yield('NombreCampo')</label>
       <input type="text" id="input1" class="form-control" @yield('Name') 

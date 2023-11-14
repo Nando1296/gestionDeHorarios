@@ -6,9 +6,9 @@
 @section("reporte","reporte_user_rol")
 @section("eliminar","eliminar-docente")
 @section('Titulo')
-
-<h3 text-center id="Titulo">Administración de docentes</h3>
+<h3 text-center>Administración de docentes</h3>
 @endsection
+
 @section('Contenido formulario')
 {{--Formulario de editar docente--}}
 <div class="row">
@@ -17,7 +17,7 @@
     <form method="GET" action="" id="formulario">
       
       @csrf
-      <h3 text-center>Editar docente</h3>
+      <h3 text-center  class="titulo-form">Editar docente</h3>
 
       <label for="inputtexto" class="form-label ">Coloque el CI del docente que quiere editar y presione buscar</label>
       <input type="text" id="inputtexto" class="form-control" name="nombre" value="{{old('nombre')}}" autofocus>

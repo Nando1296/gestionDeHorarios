@@ -21,10 +21,13 @@
 <body>
     <header>
         <header>
-            <nav class="navbar navbar-light bg-light">
+          <nav class="navbar navbar-light" >
               <div class="container-fluid">
-                <img src="{{asset('imagenes/INF-SIS.png')}}" alt="" >
-                <div class="titulo">Departamento de Informática y Sistemas </div>
+                <div>
+                  <img src="{{asset('imagenes/INF-SIS.png')}}" alt="" >
+                  <span class="titulo-nav"> Departamento de Informática y Sistemas</span>
+                </div>
+                
                 @yield('Titulo')
                 <div class="d-flex">
                   @yield("cant_not")

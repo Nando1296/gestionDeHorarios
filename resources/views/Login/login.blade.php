@@ -64,8 +64,6 @@
       var perfil=document.getElementById("perfil");
       perfil.style.display="none"
 
-     var campana=document.getElementById("campana");
-     campana.style.display="none"
     /* var not=document.getElementById("cant_not");
      not.style.display="none";*/
 </script>

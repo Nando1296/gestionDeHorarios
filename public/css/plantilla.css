@@ -1,27 +1,32 @@
 .nav-link {
-    color: black;
+    color: #fff;
     border: 0px black solid;
-    background-color: #F8F9FA;
+    background-color: #00006e;
 }
-#campana{
-    display: block;
-    color: black;
-    padding-top: 8px;
-    text-decoration: none;
-}
+
+.titulo-nav{
+    font-family: 'Poppins', sans-serif;
+    color:white;
+  }
+
+
 a{
     text-decoration: none;
     color: black;
 }
 nav {
     border-bottom: #c7c6c8 solid;
+    background-attachment: fixed;
+    background-color: #00006e;
+   
+    
 }
 #formulario {
     margin: auto;
     width: 90%;
     border: 1px solid black;
     padding: 10%;
-    background-color: #e8edea;
+    background-color: #dde0ed;
     border: white solid 1px;
     margin-bottom: 30px;
 }
@@ -36,7 +41,11 @@ nav {
 }
 h3 {
     text-align: center;
+    color: white;
+    font-size: 20px;
 }
+
+
 
 input {
     box-shadow: 6px 6px 1px #cac8ca;
@@ -115,7 +124,7 @@ body{
 #añadirD ,#añadirG{
     background-color: black;
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 10px;
     border-radius: 15px;
     color: white;
     cursor: pointer;
@@ -148,6 +157,11 @@ img{
     width: auto;
 }
 
+.titulo-form{
+    color: black;
+}
+
+
 @media (max-width: 500px) {
     
    
@@ -165,3 +179,7 @@ img{
         font-size: 10px;
     }
 }
+
+.titulo{
+    color: #fff;
+  }

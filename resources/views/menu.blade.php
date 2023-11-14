@@ -24,13 +24,13 @@
         @endforeach
         <x-menu.funcionalidad
                 :nombre="'Cambio de Horario'"
-                :icono="'menu_book'"
+                :icono="'Description'"
                 :ruta="'/cambioHorario'"
             />
 
             <x-menu.funcionalidad
                 :nombre="'Gestiones'"
-                :icono="'menu_book'"
+                :icono="'Calendar_Today'"
                 :ruta="'/gestion'"
             />
     </div>
@@ -43,8 +43,8 @@
         <div class="col-md-6">
           <div class="card-body">
             <h5 class="card-title">{{ $rol->nombre }}</h5>
-            <p class="card-text">Con Aulapp ahora podrás administrar las solicitudes y asignaciones de reservas de aulas de la Facultad de Ciencias y Tecnologia de la Universidad Mayor de San Simón</p>
-            <p class="card-text"><small class="text-muted">Aqui tienes las diferentes funciones que te ofrece Aulapp</small></p>
+            <p class="card-text">Ahora podrás administrar las solicitudes de cambios de horario de la Facultad de Ciencias y Tecnologia de la Universidad Mayor de San Simón</p>
+            <p class="card-text"><small class="text-muted">Aqui tienes las diferentes funciones que te ofrece el sistema</small></p>
           </div>
         </div>
       </div>
