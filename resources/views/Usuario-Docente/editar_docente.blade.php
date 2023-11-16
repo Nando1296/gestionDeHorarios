@@ -19,7 +19,7 @@
       @csrf
       <h3 text-center  class="titulo-form">Editar docente</h3>
 
-      <label for="inputtexto" class="form-label ">Coloque el CI del docente que quiere editar y presione buscar</label>
+      <label for="inputtexto" class="form-label ">Coloque el Código Sis del docente que quiere editar y presione buscar</label>
       <input type="text" id="inputtexto" class="form-control" name="nombre" value="{{old('nombre')}}" autofocus>
       <br>
       <button type="button" class="btn btn-dark btn-block btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off" id="buscar">
@@ -39,17 +39,13 @@
       <span class="error text-danger" for="inputApellido">{{ $errors->first('Apellido') }}</span>
       @endif
       <br>
-      <label for="CI" class="form-label ed">CI</label>
+      <label for="CI" class="form-label ed">Código Sis</label>
       <input type="text" id="inputCI" class="form-control ed" name="CI" value="{{old('CI')}}" autofocus>
       @if ($errors->has('CI'))
       <span class="error text-danger" for="inputCI">{{ $errors->first('CI') }}</span>
       @endif
       <br>
-      <label for="Correo" class="form-label ed">Email</label>
-      <input type="text" id="inputCorreo" class="form-control ed" name="Correo" value="{{old('Correo')}}" autofocus>
-      @if ($errors->has('Correo'))
-      <span class="error text-danger" for="inputCorreo">{{ $errors->first('Correo') }}</span>
-      @endif
+      
       <br>
       <input type="text" name="estadoE" id="estadoE" value="{{old('estadoE')}}">
       <label class=" oculto">Estado:</label>
@@ -93,7 +89,6 @@
   var nombre= document.getElementById("inputNombre");
   var apellido=document.getElementById("inputApellido");
   var ci=document.getElementById("inputCI");
-  var correo=document.getElementById("inputCorreo");
   var estado=document.getElementById("estado")
   var estadoE=document.getElementById("estadoE")
   estadoE.value=1
@@ -109,8 +104,7 @@
           nombre.value='{{$docente->Nombre}}'
           apellido.value= '{{$docente->Apellido}}'
           ci.value='{{$docente->CI}}'
-          correo.value= '{{$docente->Email}}'
-          correo.disabled=false
+          
           //El ci no es editable
           ci.disabled=true
           //Se asigna la ruta correspondiente al docente
@@ -139,7 +133,6 @@
             nombre.disabled=true
             apellido.disabled=true
             ci.disabled=true
-            correo.disabled=true
           }
           estadoE.value=0
           }
@@ -165,7 +158,6 @@
             nombre.disabled=false
             apellido.disabled=false
             ci.disabled=true
-            correo.disabled=true
             estado.disabled=true
     }
   }
@@ -176,7 +168,6 @@
             nombre.disabled=false
             apellido.disabled=false
             ci.disabled=false
-            correo.disabled=false
             estado.disabled=false
   }
 </script>

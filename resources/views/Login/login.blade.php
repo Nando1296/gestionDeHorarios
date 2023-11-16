@@ -12,7 +12,7 @@
 
       <form method="POST" action="/login" id="formulario">
       @csrf
-      <h3 text-center>Iniciar sesión</h3>
+      <h3 text-center  class="titulo-form">Iniciar sesión</h3>
         <div class="form-row">    
           <div class="col-12">
             <div class="input-group mb-3">

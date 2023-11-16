@@ -145,9 +145,19 @@ Route::get('/menu', [MenuController::class, 'loadMenu']);
          Route::get('/CambiarContraseña',[AuthController::class, 'showEditPassword'])->name('CambiarContraseña');
          Route::post('/CambiarContraseña', [AuthController::class, 'updatePassword'])->name('CambiarContraseña');
 
+         //--------------------------------------Horarios------------------------------------------------------------
+         Route::get('/horarios',[AsignacionDocenteController::class,'horarios'])->name('horarios');
+         Route::post('/horario',[AsignacionDocenteController::class,'storeHorario'])->name('horario');
+         Route::get('/cambioHorario', [cambioController::class,'formulario'] );
+        //-----------------------------------------Rutas de docente---------------------------------------------------
+        Route::get('/materiasDocente', [MateriaController::class,'reporteD'])->name('materiasDocente');
+        Route::get('/cambioHorarioDocente', [cambioController::class,'formularioDocente'] );
+    
+
+
 Route::post('logout', [AuthController::class, 'logout']);
 });
 
-Route::get('/cambioHorario', [cambioController::class,'formulario'] );
+
 
 

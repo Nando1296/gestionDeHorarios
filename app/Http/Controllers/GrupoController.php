@@ -250,4 +250,5 @@ class GrupoController extends Controller
 
         return redirect()->route('eliminar-grupo')->with('eliminar', 'ok');
     }
+
 }

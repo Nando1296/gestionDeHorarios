@@ -39,17 +39,13 @@ value="{{old('apellido')}}"
       <br>
 @endsection
 @section('campos')
-    <label for="input3" class="form-label">CI</label>
+    <label for="input3" class="form-label">Código Sis</label>
     <input type="text" id="input3" class="form-control" name='ci' value="{{old('ci')}}"   autofocus>
     @if ($errors->has('ci'))
           <span class="error text-danger" for="input3"> {{ $errors->first('ci') }}</span>
-          @endif
+       @endif
           <br>
     
-    <label for="input4" class="form-label">Email</label>
-    <input type="text" id="input4" class="form-control" name='email' value="{{old('email')}}"  autofocus>
-    @if ($errors->has('email'))
-          <span class="error text-danger" for="input4"> {{ $errors->first('email') }}</span>
-    @endif
+   
 
 @endsection

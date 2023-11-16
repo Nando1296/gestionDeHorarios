@@ -9,6 +9,7 @@ use App\Models\Carrera;
 use App\Models\Materia;
 use App\Models\Materia_Carrera;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class MateriaController extends Controller
 {
@@ -164,5 +165,12 @@ class MateriaController extends Controller
         });
 
         return redirect()->route('eliminar-materia')->with('eliminar', 'ok');
+    }
+
+
+    public function reporteD(){
+        $user=Auth::user();
+
+        return view('reporteMaterias',['user'=>$user]);
     }
 }

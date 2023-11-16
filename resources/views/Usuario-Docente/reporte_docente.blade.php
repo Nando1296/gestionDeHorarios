@@ -16,8 +16,8 @@
                   <tr>
                         <th scope="col">Nombre</th>
                         <th scope="col">Apellido</th>
-                        <th scope="col">CI</th>
-                        <th scope="col">Email</th>
+                        <th scope="col">Código Sis</th>
+                       
                   </tr>
             </thead>
             <tbody>
@@ -26,7 +26,7 @@
                          <td>{{$usuario->Nombre}}</td>
                          <td>{{$usuario->Apellido}}</td>
                          <td>{{$usuario->CI}}</td>
-                         <td>{{$usuario->Email}}</td>
+                         
                          
                          <td>
                                <div><a href="">

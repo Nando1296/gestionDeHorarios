@@ -8,6 +8,8 @@ use App\Models\gestion;
 use App\Models\Grupo;
 use App\Models\Materia;
 use App\Models\UserRol;
+use App\Models\Aula;
+use App\Models\horario;
 use Illuminate\Http\Request;
 
 class AsignacionDocenteController extends Controller
@@ -127,5 +129,24 @@ class AsignacionDocenteController extends Controller
 
   // dump($asignacion_docente->user_rol->usuario->Nombre);
   return redirect()->route('eliminar-asignacion-docente')->with('eliminar', 'ok');
+ }
+
+ public function horarios(){
+  $asignaciones=asignacionDocentes::all();
+  $aulas=Aula::all();
+
+  return view('horarios',['asignaciones'=>$asignaciones,'aulas'=>$aulas]);
+ }
+
+ public function storeHorario(Request $request){
+  $horario=new horario;
+  $horario->grupo_id=$request->grupo;
+  $horario->dia=$request->dia;
+  $horario->horario=$request->horario;
+  $horario->aula=$request->aula;
+
+  $horario->save();
+
+  return  redirect('horarios')->with('registrar', 'ok');
  }
 }

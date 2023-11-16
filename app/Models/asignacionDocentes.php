@@ -24,4 +24,8 @@ class asignacionDocentes extends Model
         return $this->belongsTo(UserRol::class, 'user_rol_id');
     }
 
+    public function horarios()
+    {
+        return $this->hasMany(horario::class, 'grupo_id');
+    }
 }

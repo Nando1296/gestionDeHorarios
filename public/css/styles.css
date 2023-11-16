@@ -1,24 +1,14 @@
-body {
+  body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200vh;
-   
-  }
-  
-  .titulo-nav{
-    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;   
+    font-size: 13px;
   }
 
   .formulario {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 150px;
+    padding: 50px;
     width: 900px;
   }
   
@@ -32,8 +22,7 @@ body {
     margin-bottom: 6px;
   }
   
-  input[type="label"],
-  textarea {
+  input[type="label"],textarea {
     width: 49%;
     padding: 2px;
     border: 1px solid #070707;
@@ -41,8 +30,9 @@ body {
     margin-bottom: 8px;
   }
   
-  button {
-    background-color: #00a2ff;
+  #button {
+    background: black;
+    background-color: #000000;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -50,9 +40,7 @@ body {
     cursor: pointer;
   }
 
-  button:hover {
-    background-color: #0056b3;
-  }
+
 
     /* Estilos para los checkboxes */
     input[type="checkbox"] {
@@ -60,7 +48,7 @@ body {
     }
 
  /* Estilos para los botones de radio */
- radio {
+ .radio {
   background-color: #00a2ff;
   color: #fff;
   border: none;
@@ -90,8 +78,13 @@ body {
 .table,
 th,
 td {
-border: 2px solid rgb(0, 0, 0);
+border: 1px solid rgb(0, 0, 0);
 border-collapse: collapse;
+}
+
+table{
+  
+  width: 710px;
 }
 
 

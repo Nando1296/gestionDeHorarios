@@ -9,6 +9,7 @@ use App\Notifications\Usuario as NotificationsUsuario;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class UsuarioController extends Controller
 {
@@ -59,7 +60,7 @@ class UsuarioController extends Controller
   $usuario->Nombre   = $request->nombre;
   $usuario->Apellido = $request->apellido;
   $usuario->CI       = $request->ci;
-  $usuario->Email    = $request->email;
+  $usuario->Email    = $request->ci;
 //Separamos por espacion
   $user       = explode(" ", $request->nombre);
   $iniciales  = "";
@@ -81,8 +82,8 @@ class UsuarioController extends Controller
   //Concatenamos si CI mas sus iniciales para el nombre de usuario
   $User            = $request->ci . $iniciales;
 
-  $usuario->usuario     = $User;
-  $usuario->contrasenia = $Usercontrasenia;
+  $usuario->usuario     = $request->ci;;
+  $usuario->contrasenia = $User;
   $usuario->save();
 
   //Asignamos en user rol el rol de docente
@@ -133,14 +134,13 @@ class UsuarioController extends Controller
    'Nombre'   => 'bail|required|regex:/^[a-zA-Z\s áéíóúÁÉÍÓÚñÑ]+$/u|min:3|max:25',
    'Apellido' => 'bail|required|regex:/^[a-zA-Z\s áéíóúÁÉÍÓÚñÑ]+$/u|min:2|max:30',
    'CI'       => 'bail|required|numeric|digits_between:6,10|unique:usuarios,CI,' . $docente->id,
-   'Correo'   => 'bail|required|email|regex:/^[a-zA-Z\s 0-9 @ . _]+$/|unique:usuarios,Email,' . $docente->id,
   ]);
   //Asignar los nuevos valores al docente
   $docente->estado   = $request->estadoE;
   $docente->Nombre   = $request->Nombre;
   $docente->Apellido = $request->Apellido;
   $docente->CI       = $request->CI;
-  $docente->Email    = $request->Correo;
+  $docente->Email    = $request->CI;
   //Guardar los cambios
   $docente->save();
   //Cambiar el estado del docente en caso de que sea dado de alta

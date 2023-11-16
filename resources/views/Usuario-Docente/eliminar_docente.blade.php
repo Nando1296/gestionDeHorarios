@@ -167,7 +167,7 @@ buscar.onclick=function(evento){
       encontrado=1;
     }
   @endforeach
-  @endforeach
+@endforeach
   if(encontrado==0){
     event.preventDefault();
     Swal.fire({

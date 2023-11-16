@@ -2,13 +2,14 @@
 
 
 <header>
-  <nav class="navbar navbar-light bg-light">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <nav class="navbar navbar-light ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><span id="Nlogo">Aulapp</span><img id="logo"
-          src="{{asset('Imagenes/logo.jpeg')}}" width="50" id="logo"></a>
-
+      <img src="{{asset('imagenes/INF-SIS.png')}}" alt="" >
+      <div class="titulo">Departamento de Informática y Sistemas </div>
+      
+      <a href="#" class="material-symbols-outlined" id="menu">menu</a>
       <form class="d-flex m-0">
         <a href="#" class="material-symbols-outlined" id="menu">menu</a>
         <a class="nav-link active" aria-current="page" href="{{url('menu')}}">Inicio</a>
@@ -16,12 +17,14 @@
     </div>
   </nav>
 </header>
+
+
 @section('Contenido formulario')
 
 <div class="d-flex justify-content-center" id="formulario">
   <div class="d-flex" id="formularioEditar">
         <form action="{{ route('CambiarContraseña') }}" method="POST"id="formulario">
-        <h3>Cambiar Contraseña</h3>
+        <h3 class="titulo-form">Cambiar Contraseña</h3>
             @csrf
             <div >
                 

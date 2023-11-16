@@ -22,8 +22,8 @@
                                     <div class="col-md-6">
                                         <div class="card-body">
                                                 <h4>{{$usuario->Nombre}} {{$usuario->Apellido}}<i class="fa fa-sheild"></i></h4>
-                                                <p class="card-text">Email: {{$usuario->Email}}</p>
-                                                <p class="card-text">C.I: {{$usuario->CI}}</p>
+                                                
+                                                <p class="card-text">Código Sis: {{$usuario->CI}}</p>
                                                 <div class="mg-top-10">
                                                 <a  class="btn btn-dark"  href="{{ route('CambiarContraseña',['id'=>$usuario->id])}}">Cambiar contraseña</a>
                                                 

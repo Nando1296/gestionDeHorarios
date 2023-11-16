@@ -24,8 +24,8 @@
                   <tr>
                         <th scope="col">Nombre</th>
                         <th scope="col">Apellido</th>
-                        <th scope="col">CI</th>
-                        <th scope="col">Email</th>
+                        <th scope="col">Código Sis</th>
+
                         <th scope="col">Activo</th>
                   </tr>
             </thead>
@@ -38,7 +38,6 @@
                          <td>{{$user_rol->usuario->Nombre}}</td>
                          <td>{{$user_rol->usuario->Apellido}}</td>
                          <td>{{$user_rol->usuario->CI}}</td>
-                         <td>{{$user_rol->usuario->Email}}</td>
 
                          @if($user_rol->estado==1)
                                                 
